@@ -10,7 +10,7 @@
             }
         },
         "_nestedtemplateLocation": {
-            "defaultValue": "https://raw.githubusercontent.com/markhooks81/RDS-Templates/master/wvd-templates/Create%20and%20provision%20WVD%20host%20pool/",
+            "defaultValue": "https://raw.githubusercontent.com/JimMoyle/Windows7WvdSig/master/",
             "type": "string",
             "metadata": {
                 "description": "The URI where SIG templates required by this template are located."
