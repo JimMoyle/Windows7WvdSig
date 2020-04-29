@@ -1,0 +1,127 @@
+{
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+    "contentVersion": "1.0.0.0",
+    "parameters": {
+        "rdshImageSource": {
+            "value": "Azure Shared Image Gallery"
+        },
+        "vmImageVhdUri": {
+            "value": ""
+        },
+        "rdshGalleryImageSKU": {
+            "value": "Windows-10-Enterprise-multi-session-with-Office-365-ProPlus"
+        },
+        "rdshCustomImageSourceName": {
+            "value": ""
+        },
+        "rdshCustomImageSourceResourceGroup": {
+            "value": ""
+        },
+        "sharedimagegalleryname": {
+            "value": "WvdSharedImageGallery"
+        },
+        "sharedimagedefname": {
+            "value": "Win7"
+        },
+        "sharedImageversion": {
+            "value": "1.0.0"
+        },
+        "sharedImagesubscription": {
+            "value": "4705c1d9-fec5-487f-a3e4-436f90c58c0c"
+        },
+        "sharedImageresourcegroup": {
+            "value": "WvdInfrastructure"
+        },
+        "rdshNamePrefix": {
+            "value": "Win7"
+        },
+        "rdshNumberOfInstances": {
+            "value": 1
+        },
+        "rdshVMDiskType": {
+            "value": "StandardSSD_LRS"
+        },
+        "rdshVmSize": {
+            "value": "Standard_B2S"
+        },
+        "enableAcceleratedNetworking": {
+            "value": false
+        },
+        "rdshUseManagedDisks": {
+            "value": true
+        },
+        "storageAccountResourceGroupName": {
+            "value": ""
+        },
+        "domainToJoin": {
+            "value": "jimmoyle.net"
+        },
+        "existingDomainUPN": {
+            "value": "domainjoin@jimmoyle.net"
+        },
+        "existingDomainPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/4705c1d9-fec5-487f-a3e4-436f90c58c0c/resourceGroups/WvdInfrastructure/providers/Microsoft.KeyVault/vaults/JimKeyVault"
+                },
+                "secretName": "JimAdmin"
+            }
+        },
+        "ouPath": {
+            "value": ""
+        },
+        "existingVnetName": {
+            "value": "WvdInfBastion"
+        },
+        "newOrExistingVnet": {
+            "value": "existing"
+        },
+        "existingSubnetName": {
+            "value": "WvdInfrastructure"
+        },
+        "virtualNetworkResourceGroupName": {
+            "value": "WvdInfrastructure"
+        },
+        "rdBrokerURL": {
+            "value": "https://rdbroker.wvd.microsoft.com"
+        },
+        "existingTenantGroupName": {
+            "value": "Default Tenant Group"
+        },
+        "existingTenantName": {
+            "value": "JMoyle"
+        },
+        "hostPoolName": {
+            "value": "Windows7"
+        },
+        "serviceMetadataLocation": {
+            "value": "United-States"
+        },
+        "enablePersistentDesktop": {
+            "value": false
+        },
+        "defaultDesktopUsers": {
+            "value": "user1@jimmoyle.net"
+        },
+        "tenantAdminUpnOrApplicationId": {
+            "value": "wvdadmin@jimmoyle.net"
+        },
+        "tenantAdminPassword": {
+            "reference": {
+                "keyVault": {
+                    "id": "/subscriptions/4705c1d9-fec5-487f-a3e4-436f90c58c0c/resourceGroups/WvdInfrastructure/providers/Microsoft.KeyVault/vaults/JimKeyVault"
+                },
+                "secretName": "JimAdmin"
+            }
+        },
+        "isServicePrincipal": {
+            "value": false
+        },
+        "aadTenantId": {
+            "value": "434c1f2c-2838-408b-ad3c-970944d122bd"
+        },
+        "location": {
+            "value": "UKSouth"
+        }
+    }
+}
