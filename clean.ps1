@@ -6,7 +6,7 @@ Get-AzResource | Where-Object { $_.ResourceGroupName -eq 'TestMandS' } | Remove-
 
 $hostPoolName = "Windows7"
 
-Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
+#Add-RdsAccount -DeploymentUrl "https://rdbroker.wvd.microsoft.com"
 
 Get-RdsAppGroup -TenantName JMoyle -HostPoolName $hostPoolName | Remove-RdsAppGroup
 
